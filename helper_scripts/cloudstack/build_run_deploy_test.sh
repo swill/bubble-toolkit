@@ -422,5 +422,10 @@ else
   echo "Not running tests (use -t flag to run them)"
 fi
 
+# Get 'upr' to make it easier to upload comments
+echo "Getting 'upr'.."
+wget https://github.com/cloudops/upr/releases/download/0.2.0/upr_linux_amd64 -O /tmp/MarvinLogs/upr
+chmod +x /tmp/MarvinLogs/upr
+
 echo "Finished"
 date
